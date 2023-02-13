@@ -69,4 +69,9 @@ const fetchedUserData = {
 };
 console.log(fetchedUserData.job && fetchedUserData.job.title);
 console.log((_a = fetchedUserData === null || fetchedUserData === void 0 ? void 0 : fetchedUserData.job) === null || _a === void 0 ? void 0 : _a.title);
+const input = "";
+const storedData = input || "Default";
+const nullish = input !== null && input !== void 0 ? input : "Default";
+console.log(storedData);
+console.log(nullish);
 //# sourceMappingURL=app.js.map

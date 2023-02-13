@@ -145,3 +145,12 @@ const fetchedUserData = {
 console.log(fetchedUserData.job && fetchedUserData.job.title);
 // OR
 console.log(fetchedUserData?.job?.title);
+
+// Nullish Coalescing
+
+const input = "";
+const storedData = input || "Default";
+const nullish = input ?? "Default";
+
+console.log(storedData);
+console.log(nullish);
