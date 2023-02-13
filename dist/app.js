@@ -34,4 +34,15 @@ const useVehicle = (vehicle) => {
         vehicle.loadCargo(20);
 };
 useVehicle(v2);
+const moveAnimal = (animal) => {
+    switch (animal.type) {
+        case "bird":
+            console.log(animal.flyingSpeed);
+            break;
+        case "horse":
+            console.log(animal.runningSpeed);
+            break;
+    }
+};
+moveAnimal({ type: "bird", flyingSpeed: 30 });
 //# sourceMappingURL=app.js.map
