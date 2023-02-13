@@ -22,7 +22,17 @@ type General = string | number;
 type Numeric = number | boolean;
 type Universal = General & Numeric;
 
-// Type Guards
+// Type Guards && function overloading
+function add2(num1: string, num2: string): string;
+function add2(num1: number, num2: number): number;
+function add2(num1: string, num2: number): string;
+function add2(num1: number, num2: string): string;
+function add2(num1: Combinable, num2: Combinable) {
+  if (typeof num1 === "number" && typeof num2 === "number") return num1 + num2;
+  return num1.toString() + num2.toString();
+}
+
+const result = add2(1, "2");
 
 type UnknownEmployee = Admin | Employee;
 

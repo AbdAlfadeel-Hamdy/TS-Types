@@ -4,6 +4,12 @@ const e1 = {
     privileges: ["create-server"],
     startDate: new Date(),
 };
+function add2(num1, num2) {
+    if (typeof num1 === "number" && typeof num2 === "number")
+        return num1 + num2;
+    return num1.toString() + num2.toString();
+}
+const result = add2(1, "2");
 const printEmployeeInfo = (emp) => {
     if ("privileges" in emp)
         console.log(emp.privileges);
