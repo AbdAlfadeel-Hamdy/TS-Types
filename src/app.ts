@@ -87,3 +87,23 @@ const moveAnimal = (animal: Animal) => {
 };
 
 moveAnimal({ type: "bird", flyingSpeed: 30 });
+
+// Type Casting
+
+// const userInputElement = <HTMLInputElement>(
+//   document.getElementById("user-input")
+// );
+
+// Or
+
+// const userInputElement = document.getElementById(
+//   "user-input"
+// ) as HTMLInputElement;
+
+// Or
+
+const userInputElement = document.getElementById("user-input");
+
+if (userInputElement) {
+  (userInputElement as HTMLInputElement).value = "Hi there";
+}
