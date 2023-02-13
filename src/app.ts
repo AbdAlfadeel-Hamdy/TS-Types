@@ -107,3 +107,15 @@ const userInputElement = document.getElementById("user-input");
 if (userInputElement) {
   (userInputElement as HTMLInputElement).value = "Hi there";
 }
+
+// Index Properties
+
+interface ErrorContainer {
+  [key: string]: string;
+  // id: number; // must be the same index type
+}
+
+const errorBag: ErrorContainer = {
+  email: "Invalid Email",
+  name: "Invalid Name",
+};
