@@ -1,4 +1,4 @@
-const add = (
+const addAll = (
   num1: number,
   num2: number,
   showResult: boolean
@@ -12,4 +12,4 @@ number1 = 5;
 let str = "Hi";
 // str = 5;
 // number1 = "6";
-add(3, 5, true);
+addAll(3, 5, true);
